@@ -4,6 +4,7 @@
         <img :src="trashCan" @click="removeTodo(index)"/>
         <span>Delete All</span>
       </button>
+  <p>Duplo click para editar a todo</p>
   </div>
 </template>
 
@@ -30,6 +31,10 @@ export default {
 .Overall__Actions {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: auto;
   button {
     display: flex;
     align-items: center;
